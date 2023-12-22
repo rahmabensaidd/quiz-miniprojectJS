@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+    
+        <h2>JavaScript Quiz</h2>
+        <p>What is the capital of France?</p>
+        <div class="question">
+            
+            <label>
+                <input type="radio" name="q" value="Berlin">Berlin
+            </label>
+            <label>
+                <input type="radio" name="q" value="Madrid">Madrid
+            </label>
+            <label>
+                <input type="radio" name="q" value="Paris">Paris
+            </label>
+            <label>
+                <input type="radio" name="q" value="Rome">Rome
+            </label>
+        </div>
+        <p>Which programming language is often used for web development?</p>
+        <div class="question">
+           
+            <label>
+                <input type="radio" name="q2" value="Java"  onchange="verifier()">Java
+            </label>
+            <label>
+                <input type="radio" name="q2" value="Python"  onchange="verifier()">Python
+            </label>
+            <label>
+                <input type="radio" name="q2" value="JavaScript"  onchange="verifier()">JavaScript
+            </label>
+            <label>
+                <input type="radio" name="q2" value="C++"  onchange="verifier()">C++
+            </label>
+        </div>
+        <p>What does HTML stand for?</p>
+        <div  class="question">
+           
+            <label>
+                <input type="radio" name="q1" value="HyperText Markup Language"  onchange="verifier()">HyperText Markup Language
+            </label>
+            <label>
+                <input type="radio" name="q1" value="High-Level Text Markup Language"  onchange="verifier()">High-Level Text Markup Language
+            </label>
+            <label>
+                <input type="radio" name="q1" value="Hyper Transfer Markup Language"  onchange="verifier()">Hyper Transfer Markup Language
+            </label>
+            <label>
+                <input type="radio" name="q1" value="High-Level Transfer Markup Language"  onchange="verifier()">High-Level Transfer Markup Language
+            </label>
+        </div>
+
+
+        <button onclick="submitAnswer()" id="a" >Submit Answer</button>
+        <button onclick="displayQuestion(question, options)">plus de quiz</button>
+        <div id="resultContainer"></div>
+
+    
+
+    <script src="quiz.js"></script>
+</body>
+</html>
